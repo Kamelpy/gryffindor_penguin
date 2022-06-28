@@ -6,8 +6,8 @@ from datetime import datetime
 
 bp = Blueprint('recibe', __name__)
 
-@bp.route('/form_receptor')
-def form_receptor():
+@bp.route('/recibir')
+def recibir():
     return render_template("form_receptor.html")
 
 @bp.route("/api/v1", methods =['POST'])

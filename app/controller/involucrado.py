@@ -1,16 +1,14 @@
 from flask import (
     Blueprint, render_template,request
 )
-import datetime
+from datetime import datetime
 from app.model import Involucrado
 
 bp = Blueprint('involucrado', __name__)
 
 
-@bp.route('/form_involved')
-def form_involved():
-    #Renderizamos la plantilla. Formulario HTML
-    # templates/form.html
+@bp.route('/involucrate')
+def involucrate():
     return render_template("form_involved.html")
 
 @bp.route('/api/v3',methods=['POST'])
