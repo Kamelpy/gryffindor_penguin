@@ -6,10 +6,8 @@ from app.model import Residente_envia
 bp = Blueprint('envia', __name__)
 
 
-@bp.route('/form_informer')
-def form_informer():
-    #Renderizamos la plantilla. Formulario HTML
-    # templates/form.html
+@bp.route('/alertar')
+def alertar():
     return render_template("form_informer.html")
     
 
