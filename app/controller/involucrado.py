@@ -1,7 +1,7 @@
 from flask import (
     Blueprint, render_template,request
 )
-import datetime
+from datetime import datetime
 from app.model import Involucrado
 
 bp = Blueprint('involucrado', __name__)
