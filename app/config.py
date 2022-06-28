@@ -1,4 +1,8 @@
 import os
+from flask import (
+    Blueprint, render_template
+)
+bp = Blueprint('config', __name__)
 
 class Config:
     pass
