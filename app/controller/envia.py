@@ -2,16 +2,15 @@ from flask import (
     Blueprint, render_template, request
 )
 import datetime
-from config import config
-from models import db, Residente_envia
-bp = Blueprint('main', __name__)
+from app.model import Residente_envia
+bp = Blueprint('envia', __name__)
 
 
-@bp.route('/form_receptor')
-def form_receptor():
+@bp.route('/form_informer')
+def form_informer():
     #Renderizamos la plantilla. Formulario HTML
     # templates/form.html
-    return render_template("form_receptor.html")
+    return render_template("form_informer.html")
     
 
 @bp.route('/api/v2',methods=['POST'])

@@ -1,11 +1,10 @@
 from flask import Blueprint, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-from config import config
-from models import db, Residente_envia, Residente_recibe, Involucrado
+from app.model import Residente_recibe
 import requests
 from datetime import datetime
 
-bp = Blueprint('main', __name__)
+bp = Blueprint('recibe', __name__)
 
 @bp.route('/form_receptor')
 def form_receptor():

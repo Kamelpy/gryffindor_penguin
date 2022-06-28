@@ -1,5 +1,9 @@
+from flask import (
+    Blueprint, render_template
+)
 from flask_sqlalchemy import SQLAlchemy
 
+bp = Blueprint('models', __name__)
 db = SQLAlchemy()
 
 class Residente_recibe(db.Model):

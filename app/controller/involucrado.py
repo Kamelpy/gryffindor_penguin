@@ -2,10 +2,9 @@ from flask import (
     Blueprint, render_template,request
 )
 import datetime
-from config import config
-from models import db, Involucrado
+from app.model import Involucrado
 
-bp = Blueprint('main', __name__)
+bp = Blueprint('involucrado', __name__)
 
 
 @bp.route('/form_involved')
