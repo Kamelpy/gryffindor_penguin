@@ -4,7 +4,7 @@ from flask import (
 from flask import request
 import datetime
 from config import config
-from models import db, Residente_envia, Residente_recibe, Involucrado
+from models import db, Residente_envia
 bp = Blueprint('main', __name__)
 
 
