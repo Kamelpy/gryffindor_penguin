@@ -1,7 +1,7 @@
 from flask import ( 
     Blueprint, render_template, request
 )
-import datetime
+from datetime import datetime
 from app.model import Residente_envia
 bp = Blueprint('envia', __name__)
 
