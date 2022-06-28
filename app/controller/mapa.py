@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 import folium
 from folium.plugins import MarkerCluster
-
+from haversine import haversine, Unit
 
 bp = Blueprint('mapa', __name__)
 
@@ -39,8 +39,6 @@ def mapa():
     for point in extracion_coordenadas_envia:
         marcador_envia = point[0] , point[1]
         folium.Marker(location=marcador_envia,  icon=folium.Icon(color="blue")).add_to(cluster)
-
-
 
 
     return mapa._repr_html_()
