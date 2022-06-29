@@ -23,6 +23,7 @@ def apiv1():
     telefono=datos_receptor["telefono"], 
     latitud=datos_receptor["latitud"], 
     longitud=datos_receptor["longitud"], 
+    token=datos_receptor["token"],
     fecha_registro=fecha_actual)
 
     return render_template("form_receptor.html")
