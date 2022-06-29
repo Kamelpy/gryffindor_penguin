@@ -13,7 +13,7 @@ bp = Blueprint('mapa', __name__)
 @bp.route('/mapa')
 
 def mapa():
-    mapa=folium.Map(location=[-25.3011646,-57.6320055],width="50%",height="50%",zoom_start=13)
+    mapa=folium.Map(location=[-25.3011646,-57.6320055],zoom_start=13)
     cluster=MarkerCluster().add_to(mapa)
     
     ##Resindentes que quieren recibir alertas
