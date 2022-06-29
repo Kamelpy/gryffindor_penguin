@@ -27,7 +27,7 @@ def apiv2():
     longitud=datos_informer["longitud"], 
     fecha_registro=fecha_actual
     )
-    
+
     punto_a_comparar=(float(datos_informer["latitud"]),float(datos_informer["longitud"]))
     print(punto_a_comparar)    
     lista_coordenadas_recibe=Residente_recibe.query.all()
@@ -41,6 +41,7 @@ def apiv2():
     for point in extracion_coordenadas_recibe:
         marcador_recibe = (point[0] , point[1])
         distancia=haversine(punto_a_comparar, marcador_recibe)
-        print(distancia)
+        distancia_notificacion=distancia*1000 #en metros
+        print(distancia_notificacion)
     return render_template("form_informer.html")
 
