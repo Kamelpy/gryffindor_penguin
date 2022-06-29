@@ -41,6 +41,15 @@
             </div>
             <!-- Menú principal móvil -->
             <div class="py-4 flex justify-center lg:hidden">
+                <svg class="ml-2 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+
+                <a href="{{url_for('main.index')}}" class="text-base font-medium text-white hover:text-indigo-50">
+                    Inicio </a>
                 <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                     fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -49,14 +58,6 @@
                 </svg>
                 <a href="{{url_for('main.soluciones')}}" class="text-base font-medium text-white hover:text-indigo-50"> Soluciones </a>
 
-                <svg class="ml-2 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                    fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd" />
-                </svg>
-
-                <a href="{{url_for('main.mas_info')}}" class="text-base font-medium text-white hover:text-indigo-50"> Más info </a>
 
                 <svg class="ml-2 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                     fill="currentColor" aria-hidden="true">
@@ -71,45 +72,75 @@
             </div>
         </nav>
     </header>
-    <!-- Sección mapa -->
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://www.pinuphouses.com/wp-content/uploads/house-boat-construction-plans.png" alt=""> -->
-        <iframe src="/mapa" class="mt-2 h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full" frameborder="0"></iframe>
-    </div>
 
-    <!-- Introduccimos el botón principal1 -->
-    <section class="justify-center">
-        <div class="mb-3 flex justify-center">
+    <!-- seccion mas info -->
+    <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+            <h4 class="text-lg tracking-tight font-extrabold text-gray-900">
+                <span class="block text-indigo-600 xl:inline">Más Info</span>
+            </h4>
+            <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">SIAP, es una aplicación creada con la idea de comunicar a personas afectadas por inundaciones en sus viviendas y, de esa manera puedan alertarse y ayudarse mutuamente.
 
-                <a href="{{url_for('main.que_hacer')}}">
-                <button src type="button"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">¿Qué
-                    hacer?
-                </button>
-            </a>
-        </div>
-        <!-- Introduccimos botones secundarios -->
-        <div class="flex justify-center">
-            <!-- Boton Recibir alerta -->
-            <div>
+                ¿Para qué creamos SIAP? Durante las inundaciones, las personas sufren de un problema común: la incapacidad de comunicarse efectivamente entre sí al momento que el agua invade sus viviendas. Y la total ausencia de un sistema de contingencia y ayuda cuando hay una inundación.
                 
-                <a href="{{url_for('recibe.recibir')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-lime-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Recibir
-                        alerta</button>
-                </a>
-                
-                <!-- Botón enviar alerta-->
-                <a href="{{url_for('envia.alertar')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-red-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar
-                        alerta
-                    </button>
-                </a>
-                
+                SIAP da la oportunidad al usuario de ser notificado por otro usuario cuando el agua crece, y a partir de esa información solicitar ayuda o ayudar a quienes los necesitan. Está pensada para optimizar el sentido de solidaridad y soporte entre las comunidades que sufren estas condiciones. 
+                </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+
             </div>
         </div>
-    </section>
+        <!-- preguntas frecuentas -->
+        <div class="sm:text-center lg:text-left">
+            <h4 class="text-lg tracking-tight font-extrabold text-gray-900">
+                <span class="block text-indigo-600 xl:inline">Preguntas Frecuentes</span>
+            </h4>
+            
+            <h4 class="text-lg tracking-tight font-extrabold text-gray-900">
+                <span class="block text-indigo-600 xl:inline">¿Cómo hago para recibir ayuda en futuros casos de inundación?
+                </span>
+            </h4>
+            <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Para recibir ayuda si sos o serás una persona vulnerable durante una inundación, presiona el botón “Recibir alerta”, completa el formulario y ya estarás registrado para recibir alertas. 
+                </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+
+            </div>
+        </div>
+        <!-- preguntas frecuentas -->
+
+        <!-- como pido ayuda -->
+        <h4 class="text-lg tracking-tight font-extrabold text-gray-900">
+            <span class="block text-indigo-600 xl:inline">¿Cómo pido ayuda?</span>
+        </h4>
+        <p
+            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Si estás en una situación de inundación, presiona el botón: “¿Qué hacer?”, luego “Necesito ayuda” y se te presentará una guía básica de acciones posibles casos peligrosos, y una serie de números de ayuda.</p>
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+        <!-- como pido ayuda -->
+
+        <!-- como hago para ayudar -->
+                <h4 class="text-lg tracking-tight font-extrabold text-gray-900">
+            <span class="block text-indigo-600 xl:inline">¿Cómo hago para ayudar?
+            </span>
+        </h4>
+        <p
+            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Si deseas ser voluntario, presiona “¿Qué hacer?”, luego “Quiero ayudar”, y serás redirigido a un formulario en donde se te preguntará qué puedes hacer para ayudar y a quién y dónde ayudar.</p>
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+        <!-- como hago para ayudar -->
+
+        <!-- quiero enviar alertas -->
+        <h4 class="text-lg tracking-tight font-extrabold text-gray-900">
+            <span class="block text-indigo-600 xl:inline">Quiero enviar alertas
+
+            </span>
+        </h4>
+        <p
+            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Para enviar alertas sobre inundaciones cercanas a otras personas, presión “Alertar”, y se te redirigirá a un formulario en donde deberás especificar su ubicación, hora y la opción de enviar una fotografía y breve comentario de la situación. 
+        </p>
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+        <!-- quiero enviar alertas -->
+    </main>
+    <!-- fin seccion mas info -->
 
     <!-- Añadimos el pie de página -->
     <!-- This example requires Tailwind CSS v2.0+ -->

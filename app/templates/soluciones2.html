@@ -47,7 +47,8 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
-                <a href="{{url_for('main.soluciones')}}" class="text-base font-medium text-white hover:text-indigo-50"> Soluciones </a>
+                <a href="{{url_for('main.index')}}" class="text-base font-medium text-white hover:text-indigo-50">
+                    Inicio </a>
 
                 <svg class="ml-2 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                     fill="currentColor" aria-hidden="true">
@@ -56,7 +57,8 @@
                         clip-rule="evenodd" />
                 </svg>
 
-                <a href="{{url_for('main.mas_info')}}" class="text-base font-medium text-white hover:text-indigo-50"> Más info </a>
+                <a href="{{url_for('main.mas_info')}}" class="text-base font-medium text-white hover:text-indigo-50">
+                    Más info </a>
 
                 <svg class="ml-2 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                     fill="currentColor" aria-hidden="true">
@@ -65,51 +67,160 @@
                         clip-rule="evenodd" />
                 </svg>
 
-                <a href="{{url_for('main.problematica')}}" class="text-base font-medium text-white hover:text-indigo-50"> Problemática </a>
+                <a href="{{url_for('main.problematica')}}"
+                    class="text-base font-medium text-white hover:text-indigo-50"> Problemática </a>
 
 
             </div>
         </nav>
     </header>
-    <!-- Sección mapa -->
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://www.pinuphouses.com/wp-content/uploads/house-boat-construction-plans.png" alt=""> -->
-        <iframe src="/mapa" class="mt-2 h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full" frameborder="0"></iframe>
-    </div>
 
-    <!-- Introduccimos el botón principal1 -->
-    <section class="justify-center">
-        <div class="mb-3 flex justify-center">
+    <!-- seccion construccionde csasa -->
+    <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block text-indigo-600 xl:inline">Construcción de casas anfibias</span>
+            </h1>
+            <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                La implementación del proyecto de la fundación Bouyant a salvado a miles de personas de los efectos
+                colaterales de las inundaciones.</p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 
-                <a href="{{url_for('main.que_hacer')}}">
-                <button src type="button"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">¿Qué
-                    hacer?
-                </button>
-            </a>
-        </div>
-        <!-- Introduccimos botones secundarios -->
-        <div class="flex justify-center">
-            <!-- Boton Recibir alerta -->
-            <div>
-                
-                <a href="{{url_for('recibe.recibir')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-lime-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Recibir
-                        alerta</button>
-                </a>
-                
-                <!-- Botón enviar alerta-->
-                <a href="{{url_for('envia.alertar')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-red-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar
-                        alerta
-                    </button>
-                </a>
-                
             </div>
         </div>
-    </section>
+    </main>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="https://www.pinuphouses.com/wp-content/uploads/house-boat-construction-plans.png" alt="">
+    </div>
+    <!-- seccion construccionde csasa -->
+
+    <!-- seccion que es una cimentacion flotante -->
+    <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block text-indigo-600 xl:inline">Qué es una cimentación Flotante?</span>
+            </h1>
+            <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Una cimentación flotante es un tipo de cimentación anfibia en la que se moderniza una estructura
+                existente para permitir que flote tan alto como sea necesario durante las inundaciones mientras
+                permanece en el suelo en condiciones normales. El sistema consta de tres elementos básicos: bloques de
+                flotabilidad debajo de la casa que brindan flotación, postes de guía verticales que evitan que la casa
+                vaya a cualquier lugar excepto hacia arriba y hacia abajo, y una subestructura estructural que une todo.
+                Las líneas de servicios públicos tienen conexiones 'separables' autosellantes o líneas 'umbilicales'
+                largas y enrolladas. Las casas que se pueden elevar se pueden anfibiar, generalmente a un costo
+                significativamente menor.</p>
+            <div class="flex place-content-evenly">
+                <div>
+                    <iframe class="py-16 px-10" src="https://www.youtube.com/embed/WdTCU8_A7wk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- QUE PAISES USARON LAS CASAS FLOTANTES -->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div class="absolute inset-0">
+            <div class="bg-white h-1/3 sm:h-2/3"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Ciudades que implementaron
+                    proyectos de construcción con casas anfibias</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Muchas ciudades del mundo estan
+                    empezando a construir casas anfibias para las victimas de inundaciones</p>
+            </div>
+            <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover"
+                            src="https://images.squarespace-cdn.com/content/v1/5df95ab752eb4b313e3d0616/1586372459656-3PDHRDE0RJTNE3TGSGQT/03-Pavilion_MainCampus.jpg?format=1000w"
+                            alt="">
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a href="#" class="hover:underline"> Lugar </a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <p class="text-xl font-semibold text-gray-900">Ontario, Canada</p>
+                                <p class="mt-3 text-base text-gray-500">Con la ayuda del gobierno canadiense, se
+                                    contruyeron miles de viviendas para ayudar a las victimas de inundaciones.</p>
+                            </a>
+                        </div>
+                        <div class="mt-6 flex items-center">
+
+                            <div class="ml-3">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover"
+                            src="https://images.squarespace-cdn.com/content/v1/5df95ab752eb4b313e3d0616/1576627987228-Q2JLW9Y2K75YVO1XJ1TQ/Screen+Shot+2019-12-17+at+6.59.47+PM.png?format=1000w"
+                            alt="">
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a href="#" class="hover:underline"> Lugar </a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <p class="text-xl font-semibold text-gray-900">Mekon River Delta, Vietnam</p>
+                                <p class="mt-3 text-base text-gray-500">Vietnam contruyó cientos de casas anfibias para
+                                    ayudar a sus pobladores en tiempo de crisis.</p>
+                            </a>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover"
+                            src="https://images.squarespace-cdn.com/content/v1/5df95ab752eb4b313e3d0616/1586385589825-SHH6JC0HXNI7MR3YSYZ2/04-Farnsworth_Perspective.jpg?format=1500w"
+                            alt="">
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a href="#" class="hover:underline"> Lugar </a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <p class="text-xl font-semibold text-gray-900">Ilinois, USA</p>
+                                <p class="mt-3 text-base text-gray-500">Años tras años, Ilinois sufre grandes
+                                    inundaciones, pero gracias a las casas flotantes se pudo solucionar gran parte de
+                                    los daños colaterales.</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- seccion construccionde csasa -->
 
     <!-- Añadimos el pie de página -->
     <!-- This example requires Tailwind CSS v2.0+ -->
@@ -117,10 +228,12 @@
         <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8 ">
             <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
                 <div class="px-5 py-2">
-                    <a href="{{url_for('main.conocenos')}}" class="text-base text-gray-500 hover:text-gray-900"> Conócenos </a>
+                    <a href="{{url_for('main.conocenos')}}" class="text-base text-gray-500 hover:text-gray-900">
+                        Conócenos </a>
                 </div>
                 <div class="px-5 py-2">
-                    <a href="{{url_for('main.donaciones')}}" class="text-base text-gray-500 hover:text-gray-900"> Haz una donación </a>
+                    <a href="{{url_for('main.donaciones')}}" class="text-base text-gray-500 hover:text-gray-900"> Haz
+                        una donación </a>
                 </div>
 
 

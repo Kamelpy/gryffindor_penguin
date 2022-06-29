@@ -47,6 +47,14 @@
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
                 </svg>
+                <a href="{{url_for('main.index')}}" class="text-base font-medium text-white hover:text-indigo-50"> Inicio </a>
+                
+                <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
                 <a href="{{url_for('main.soluciones')}}" class="text-base font-medium text-white hover:text-indigo-50"> Soluciones </a>
 
                 <svg class="ml-2 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -71,45 +79,31 @@
             </div>
         </nav>
     </header>
-    <!-- Sección mapa -->
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://www.pinuphouses.com/wp-content/uploads/house-boat-construction-plans.png" alt=""> -->
-        <iframe src="/mapa" class="mt-2 h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full" frameborder="0"></iframe>
+
+<!-- botones -->
+<!-- Introduccimos botones secundarios -->
+<div class="mt-5 flex justify-center">
+    <!-- Boton Recibir alerta -->
+    <section>
+    <div>
+        
+        <a href="">
+            <button type="button"
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-lime-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Necesito ayuda</button>
+        </a>
+        
+        <!-- Botón enviar alerta-->
+        <a href="">
+            <button type="button"
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-red-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Quiero ayudar
+            </button>
+        </a>
+        
     </div>
-
-    <!-- Introduccimos el botón principal1 -->
-    <section class="justify-center">
-        <div class="mb-3 flex justify-center">
-
-                <a href="{{url_for('main.que_hacer')}}">
-                <button src type="button"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">¿Qué
-                    hacer?
-                </button>
-            </a>
-        </div>
-        <!-- Introduccimos botones secundarios -->
-        <div class="flex justify-center">
-            <!-- Boton Recibir alerta -->
-            <div>
-                
-                <a href="{{url_for('recibe.recibir')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-lime-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Recibir
-                        alerta</button>
-                </a>
-                
-                <!-- Botón enviar alerta-->
-                <a href="{{url_for('envia.alertar')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-red-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar
-                        alerta
-                    </button>
-                </a>
-                
-            </div>
-        </div>
-    </section>
+</section>
+</div>
+<!-- botones -->
+    
 
     <!-- Añadimos el pie de página -->
     <!-- This example requires Tailwind CSS v2.0+ -->

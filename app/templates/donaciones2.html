@@ -71,45 +71,97 @@
             </div>
         </nav>
     </header>
-    <!-- Sección mapa -->
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://www.pinuphouses.com/wp-content/uploads/house-boat-construction-plans.png" alt=""> -->
-        <iframe src="/mapa" class="mt-2 h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full" frameborder="0"></iframe>
+
+<!-- hace una donacion -->
+<main class="lg:relative">
+    <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+      <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+        <h1
+          class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+          <span class="block xl:inline">Haz una donación</span>
+          <span class="block text-indigo-600 xl:inline">¡y cambiá vidas...!</span>
+        </h1>
+        <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">Doná 1 kit
+          de materiales de construcción (chapa y terciadas), doná una casa anfibia a una familia afectada, o simplemente doná dinero que se utilizará para la construcción de sus nuevas casas anfibias.</p>
+        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+
+
+        </div>
+      </div>
     </div>
+    <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <img class="absolute inset-0 w-full h-full object-cover"
+        src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        alt="">
+    </div>
+  </main>
+<!-- hace una donacion -->
 
-    <!-- Introduccimos el botón principal1 -->
-    <section class="justify-center">
-        <div class="mb-3 flex justify-center">
+<!-- formas de donar -->
+<div class="bg-white">
+    <div class="max-w-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Formas de donar</h2>
+      <p class="mt-4 text-base text-gray-500">Tenes 3 formas de donar para las familias afectadas.</p>
 
-                <a href="{{url_for('main.que_hacer')}}">
-                <button src type="button"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">¿Qué
-                    hacer?
-                </button>
-            </a>
-        </div>
-        <!-- Introduccimos botones secundarios -->
-        <div class="flex justify-center">
-            <!-- Boton Recibir alerta -->
-            <div>
-                
-                <a href="{{url_for('recibe.recibir')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-lime-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Recibir
-                        alerta</button>
-                </a>
-                
-                <!-- Botón enviar alerta-->
-                <a href="{{url_for('envia.alertar')}}">
-                    <button type="button"
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-red-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar
-                        alerta
-                    </button>
-                </a>
-                
-            </div>
-        </div>
-    </section>
+      <div class="mt-10 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <a href="#" class="group block">
+          <div aria-hidden="true"
+            class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6">
+            <img src="https://ezequielmaderas.com/wp-content/uploads/2019/01/terciado-004-600x450.jpg"
+              alt="Brown leather key ring with brass metal loops and rivets on wood table."
+              class="w-full h-full object-center object-cover">
+          </div>
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Kit de chapas y terciadas</h3>
+          <p class="mt-2 text-sm text-gray-500">Dona un kit de chapas y terciadas para una casa damnificada. Cada kit
+            cuesta 500 mil gs y se compone de 8 planchas de madera y 8 laminas de chapas.</p>
+          <br>
+
+        </a>
+
+        <a href="#" class="group block">
+          <div aria-hidden="true"
+            class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5df95ab752eb4b313e3d0616/1576628447213-OEGJCPPESUIVS5U1N8BC/37783608_1292381357571337_5772398069723168768_o-1.jpg"
+              alt="Natural leather mouse pad on white desk next to porcelain mug and keyboard."
+              class="w-full h-full object-center object-cover">
+          </div>
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Construcción de una casa anfibia</h3>
+          <p class="mt-2 text-sm text-gray-500">Dona una casa anfibia a una familia afectada. Con un presupuesto de 8
+            millones ya puedes darle a una familia un techo mas seguro para vivir.</p>
+
+        </a>
+
+        <a href="#" class="group block">
+          <div aria-hidden="true"
+            class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6">
+            <img src="https://susociodenegocios.com/wp-content/uploads/2012/11/shutterstock_54953497.jpg"
+              alt="Person placing task list card into walnut card holder next to felt carrying case on leather desk pad."
+              class="w-full h-full object-center object-cover">
+          </div>
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Dona dinero</h3>
+          <p class="mt-2 text-sm text-gray-500">A traves de esta pagina web puedes donar dinero que sera entregado a
+            diversas familias en necesidad.</p>
+
+        </a>
+
+      </div>
+    </div>
+  </div>
+<!-- formas de donar -->
+
+
+<!-- boton donar -->
+<section>
+
+    <div class="flex place-content-evenly">
+      <div>
+        <button type="button"
+          class="inline-flex items-center px-6 py-3 border border-transparent text-[30px] font-extrabold rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Donar</button>
+      </div>
+    </div>
+  </section>
+<!-- boton donar -->
 
     <!-- Añadimos el pie de página -->
     <!-- This example requires Tailwind CSS v2.0+ -->
