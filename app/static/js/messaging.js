@@ -6,13 +6,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDJGVf7prpOFQglfuoN03aC1HDzB3Q0sIA",
-  authDomain: "saigryffindor.firebaseapp.com",
-  projectId: "saigryffindor",
-  storageBucket: "saigryffindor.appspot.com",
-  messagingSenderId: "808675770223",
-  appId: "1:808675770223:web:67e52ddfdffcfa651fb29a",
-  measurementId: "G-3WMT1RN9XV",
+  apiKey: "AIzaSyDrpBOkhzCb0LC2xSEJf45YehgedGb8Hy0",
+  authDomain: "gryffindor-ac591.firebaseapp.com",
+  projectId: "gryffindor-ac591",
+  storageBucket: "gryffindor-ac591.appspot.com",
+  messagingSenderId: "316818368677",
+  appId: "1:316818368677:web:21e3a322e4cbcb024cc54c",
+  measurementId: "G-DVXQ9ZDL5Q"
 };
 
 // Initialize Firebase
@@ -36,11 +36,11 @@ async function requestPermission() {
     console.log("Notification permission granted.");
     token = await getToken(messaging, {
       vapidKey:
-        "BFHUvBq-O474KK8haGaxp-1RSGBwoxXSIhAwrJitAebXPfBGgbuR9zOZ5_Wsf3idO6PYpZjymz3ojAEiY6RbOf8",
+        "BC9ydWNzRYTF-BTt78m0_bQakvC5xYXpQJjWYRWBkwdqrnZrcPpdo7nmlP8uVi14C66-RE3sae8iXg-IHu11YQI",
     });
   }
   return token;
-  //console.log(token);
+  console.log(token);
 }
 
 document
