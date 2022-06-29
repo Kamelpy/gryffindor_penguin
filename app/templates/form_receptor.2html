@@ -37,7 +37,7 @@
         }
 
         button {
-            background-color: #4286f4;
+            background-color: #3a81f3;
             color: white;
             padding: 14px 0;
             margin: 10px 0;
@@ -81,7 +81,7 @@
 </head>
 
 <body>
-    <form action="/api/v3" methods="POST">
+    <form action="/api/v1" methods="post">
         <h1>Gryffindor</h1>
         <div class="icon">
             <i class="fas fa-user-circle"></i>
@@ -89,35 +89,31 @@
         <div class="formcontainer">
             <div class="container">
                 <label for="nombre"><strong>Nombre</strong></label>
-                <input type="text" placeholder="Ingrese su Nombre." name="nombre" required>
+                <input type="text" placeholder="Ingrese Nombre" name="nombre" required>
 
                 <label for="apellido"><strong>Apellido</strong></label>
                 <input type="text" placeholder="Ingrese Su Apellido." name="apellido" required>
 
                 <label for="cedula_identidad"><strong>Cedula</strong></label>
-                <input type="text" placeholder="Ingrese su C.I Numero." name="cedula_identidad" required>
+                <input type="number" placeholder="Ingrese numero de cedula" name="cedula_identidad" required>
 
+                <label for="edad"><strong>Edad</strong></label>
+                <input type="number" placeholder="Ingrese su Edad" name="edad" required>
 
-                <label for="telefono"><strong>Telefono</strong></label>
-                <input type="text" placeholder="Ingrese su Numero." name="telefono" required>
+                <label for="telefono">Telefono<strong></strong></label>
+                <input type="number" placeholder="Ingrese su Numero de Telefono" name="telefono" required>
 
+                <label for="latitud"><strong>Latitud</strong></label>
+                <input type="number" placeholder="Ingrese Su Latidud" name="latitud" required>
 
-
-
-                <label for="servicio_a_ofrecer">Servicios a Ofrecer<strong></strong></label>
-                <select name="color" id="color">
-                    <option value="r">Viveres</option>
-                    <option value="a">Remedios</option>
-                    <option value="v">Refugio</option>
-                    <option value="v">Terciadas</option>
-                    <option value="v">Chapas</option>
+                <label for="longitud"><strong>Longitud</strong></label>
+                <input type="number" placeholder="Ingrese su Longitud" name="longitud" required>
+                
 
                 </select>
-
-
             </div>
             <button type="submit"><strong>Inscribite</strong></button>
-        
+
             
 
             </div>

@@ -1,123 +1,35 @@
 <!DOCTYPE html>
-<html>
-<title>Simple Sign up from</title>
-
+<html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <style>
-        html,
-        body {
-            display: flex;
-            justify-content: center;
-            font-family: Roboto, Arial, sans-serif;
-            font-size: 15px;
-        }
-
-        form {
-            border: 5px solid #f1f1f1;
-        }
-
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 16px 8px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        .icon {
-            font-size: 110px;
-            display: flex;
-            justify-content: center;
-            color: #4286f4;
-        }
-
-        button {
-            background-color: #3a81f3;
-            color: white;
-            padding: 14px 0;
-            margin: 10px 0;
-            border: none;
-            cursor: grab;
-            width: 48%;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 18;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .formcontainer {
-            text-align: center;
-            margin: 24px 50px 12px;
-        }
-
-        .container {
-            padding: 16px 0;
-            text-align: left;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 0;
-            padding-right: 15px;
-        }
-
-        /* Change styles for span on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }}
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <form action="/api/v1" methods="POST">
-        <h1>Gryffindor</h1>
-        <div class="icon">
-            <i class="fas fa-user-circle"></i>
-        </div>
-        <div class="formcontainer">
-            <div class="container">
-                <label for="nombre"><strong>Nombre</strong></label>
-                <input type="text" placeholder="Ingrese Nombre" name="nombre" required>
+    <form action="/api/v1" method="post">
+        <label for="nombre">Ingresa tu nombre</label>
+        <input type="text" name="nombre"><br/>
 
-                <label for="apellido"><strong>Apellido</strong></label>
-                <input type="text" placeholder="Ingrese Apellido" Su Apellido. name="apellido" required>
+        <label for="apellido">Ingresa tu apellido</label>
+        <input type="text" name="apellido"><br/>
 
-                <label for="cedula_identidad"><strong>Cedula</strong></label>
-                <input type="value" placeholder="Ingrese numero de cedula" name="cedula_identidad" required>
+        <label for="cedula_identidad">Su número de cédula de identidad</label>
+        <input type="value" name="cedula_identidad"><br/>
 
-                <label for="edad"><strong>Edad</strong></label>
-                <input type="value" placeholder="Ingrese su Edad" name="edad" required>
+        <label for="edad">Edad</label>
+        <input type="value" name="edad"><br/>
+    
+        <label for="telefono">Telefono</label>
+        <input type="value" name="telefono"><br/>
 
-                <label for="telefono">Telefono<strong></strong></label>
-                <input type="value" placeholder="Ingrese su Numero de Telefono" name="telefono" required>
+        <label for="latitud">Latidud</label>
+        <input type="value" name="latitud"><br/>
 
-                <label for="latitud"><strong>Latitud</strong></label>
-                <input type="value" placeholder="Ingrese Su Latidud" name="latitud" required>
+        <label for="longitud">Longitud</label>
+        <input type="value" name="longitud"><br/>
 
-                <label for="longitud"><strong>Longitud</strong></label>
-                <input type="value" placeholder="Ingrese su Longitud" name="longitud" required>
-                
-
-                </select>
-            </div>
-            <button type="submit"><strong>Inscribite</strong></button>
-
-            
-
-            </div>
+        <input type="submit" value="Enviar" />
     </form>
 </body>
-
 </html>
