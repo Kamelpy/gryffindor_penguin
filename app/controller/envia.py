@@ -11,6 +11,7 @@ from haversine import haversine, Unit
 def alertar():
     return render_template("form_informer.html")
     
+##Se cargan los datos de la persona que está informando de una alerta, junto con su ubicación (latitud y longitud)
 
 @bp.route('/api/v2',methods=['POST'])
 def apiv2():
@@ -28,6 +29,7 @@ def apiv2():
     fecha_registro=fecha_actual
     )
 
+##Se toma la ubicación de la persona que alerta, y se compara con todas las personas que se registraron para recibir información oportuna
     punto_a_comparar=(float(datos_informer["latitud"]),float(datos_informer["longitud"]))
     print(punto_a_comparar)    
     lista_coordenadas_recibe=Residente_recibe.query.all()
@@ -37,11 +39,12 @@ def apiv2():
         coordenadas_especificas_residente_recibe_lat_lon=[elemento.latitud , elemento.longitud]  
         extracion_coordenadas_recibe.append(coordenadas_especificas_residente_recibe_lat_lon) 
     print(extracion_coordenadas_recibe) 
-    
+
+##Se capta la distancia entre el punto de alerta y el de las personas registradas
     for point in extracion_coordenadas_recibe:
         marcador_recibe = (point[0] , point[1])
         distancia=haversine(punto_a_comparar, marcador_recibe)
-        distancia_notificacion=distancia*1000 #en metros
+        distancia_notificacion=distancia*1000                    #se convierte la distancia en metros
         print(distancia_notificacion)
     return render_template("form_informer.html")
 
