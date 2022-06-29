@@ -19,11 +19,12 @@ class Residente_recibe(db.Model):
     telefono= db.Column(db.Integer)
     latitud = db.Column(db.Float)
     longitud = db.Column(db.Float)
+    token = db.Column(db.String(500))
     fecha_registro = db.Column(db.DateTime)
 
     @classmethod
-    def create(cls, nombre, apellido, cedula_identidad, edad, telefono, latitud, longitud, fecha_registro):
-        afectado = Residente_recibe(nombre=nombre, apellido=apellido, cedula_identidad=cedula_identidad, edad=edad, telefono=telefono, latitud=latitud, longitud=longitud, fecha_registro=fecha_registro)
+    def create(cls, nombre, apellido, cedula_identidad, edad, telefono, latitud, longitud, token, fecha_registro):
+        afectado = Residente_recibe(nombre=nombre, apellido=apellido, cedula_identidad=cedula_identidad, edad=edad, telefono=telefono, latitud=latitud, longitud=longitud, token=token, fecha_registro=fecha_registro)
         return afectado.save()
     
     def save(self):
@@ -54,6 +55,7 @@ class Residente_recibe(db.Model):
             'telefono': self.telefono,
             'latitud': self.latitud,
             'longitud': self.longitud,
+            'token': self.token,
             'fecha_registro': self.fecha_registro
         }
 class Residente_envia(db.Model):

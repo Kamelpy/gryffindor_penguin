@@ -39,16 +39,27 @@ async function requestPermission() {
         "BFHUvBq-O474KK8haGaxp-1RSGBwoxXSIhAwrJitAebXPfBGgbuR9zOZ5_Wsf3idO6PYpZjymz3ojAEiY6RbOf8",
     });
   }
-
-  console.log(token);
+  return token;
+  //console.log(token);
 }
 
 document
   .getElementById("request-permission")
   .addEventListener("click", async () => {
     console.log("sii");
-    await requestPermission();
-  });
+    token=await requestPermission();
+    document.getElementById("token").value = token;
+    const data = {token}
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    };
+    fetch("/recibir",options);;
+    } 
+  );
 
 function showNotification(notification) {
   // Let's check if the browser supports notifications
