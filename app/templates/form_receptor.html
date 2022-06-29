@@ -108,6 +108,35 @@
       </form>
     </div>
   </div>
+  <script>
+    if ("geolocation" in navigator) {
+      console.log("location is available");
+      searchPosition();
+    } else {
+      console.log("geolocation is not available");
+    }
+    
+    function searchPosition() {
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        document.getElementById("latitud").value = lat;
+        document.getElementById("longitud").value = lon;
+        const data = {lat, lon};
+        const options = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        };
+        fetch("/nueva", options);
+      });
+    }
+  </script>
+
+
+
 
 </body>
 
