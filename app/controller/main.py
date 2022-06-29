@@ -7,4 +7,13 @@ bp = Blueprint('main', __name__)
 
 @bp.route('/')
 def index():
-    return render_template('main/index.html',title='Gryffindor Penguin')
+    return render_template('index2.html')
+
+@bp.route('/soluciones')
+def soluciones():
+    return render_template('soluciones.html')
+
+@bp.route('/donaciones')
+def donaciones():
+    return render_template("donaciones.html")
+
